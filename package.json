@@ -23,10 +23,10 @@
     "typecheck": "tsc -p scripts && tsc -p playground && tsc -p packages/plugin-react",
     "test": "pnpm run test-unit && pnpm run test-serve && pnpm run test-build && pnpm --filter ./packages/plugin-react-swc run test",
     "test-unit": "pnpm -r --filter='./packages/*' run test-unit",
-    "test-serve": "vitest run -c playground/vitest.config.e2e.ts",
-    "test-build": "VITE_TEST_BUILD=1 vitest run -c playground/vitest.config.e2e.ts",
-    "debug-serve": "VITE_DEBUG_SERVE=1 vitest run -c playground/vitest.config.e2e.ts",
-    "debug-build": "VITE_TEST_BUILD=1 VITE_PRESERVE_BUILD_ARTIFACTS=1 vitest run -c playground/vitest.config.e2e.ts",
+    "test-serve": "vite test run -c playground/vitest.config.e2e.ts",
+    "test-build": "VITE_TEST_BUILD=1 vite test run -c playground/vitest.config.e2e.ts",
+    "debug-serve": "VITE_DEBUG_SERVE=1 vite test run -c playground/vitest.config.e2e.ts",
+    "debug-build": "VITE_TEST_BUILD=1 VITE_PRESERVE_BUILD_ARTIFACTS=1 vite test run -c playground/vitest.config.e2e.ts",
     "build": "pnpm -r --filter='./packages/*' run build",
     "dev": "pnpm -r --parallel --filter='./packages/*' run dev",
     "release": "node scripts/release.ts",
@@ -50,9 +50,10 @@
     "simple-git-hooks": "^2.13.1",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.48.0",
-    "vite": "^7.2.4",
+    "vite": "catalog:",
     "vite-plugin-inspect": "^11.3.3",
-    "vitest": "^4.0.14"
+    "vitest": "catalog:",
+    "@voidzero-dev/vite-plus": "catalog:"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm exec lint-staged --concurrent false"

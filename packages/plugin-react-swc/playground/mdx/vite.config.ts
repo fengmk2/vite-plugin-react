@@ -1,4 +1,4 @@
-import { defineConfig } from 'vite'
+import { defineConfig } from '@voidzero-dev/vite-plus'
 import mdx from '@mdx-js/rollup'
 import react from '@vitejs/plugin-react-swc'
 

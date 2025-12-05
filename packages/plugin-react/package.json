@@ -29,7 +29,7 @@
     "dev": "tsdown --watch ./src --watch ../common",
     "build": "tsdown",
     "prepublishOnly": "npm run build",
-    "test-unit": "vitest run"
+    "test-unit": "vite test run"
   },
   "engines": {
     "node": "^20.19.0 || >=22.12.0"

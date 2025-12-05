@@ -4,12 +4,12 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite dev",
     "build": "vite build",
     "preview": "vite preview",
-    "cf-dev": "vite -c ./cf/vite.config.ts",
-    "cf-build": "vite -c ./cf/vite.config.ts build",
-    "cf-preview": "vite -c ./cf/vite.config.ts preview",
+    "cf-dev": "vite dev -c ./cf/vite.config.ts",
+    "cf-build": "vite dev -c ./cf/vite.config.ts build",
+    "cf-preview": "vite dev -c ./cf/vite.config.ts preview",
     "cf-release": "wrangler deploy -c dist/rsc/wrangler.json && wrangler deploy"
   },
   "dependencies": {
@@ -26,7 +26,8 @@
     "@vitejs/plugin-react": "latest",
     "@vitejs/plugin-rsc": "latest",
     "tailwindcss": "^4.1.17",
-    "vite": "^7.2.4",
-    "wrangler": "^4.51.0"
+    "vite": "catalog:",
+    "wrangler": "^4.51.0",
+    "@voidzero-dev/vite-plus": "catalog:"
   }
 }
