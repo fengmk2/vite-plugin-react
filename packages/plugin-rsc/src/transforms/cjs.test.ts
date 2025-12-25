@@ -1,5 +1,5 @@
 import { createServer, createServerModuleRunner, parseAstAsync } from 'vite'
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it } from '@voidzero-dev/vite-plus/test'
 import { debugSourceMap } from './test-utils'
 import { transformCjsToEsm } from './cjs'
 import path from 'node:path'

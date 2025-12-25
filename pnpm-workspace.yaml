@@ -22,8 +22,20 @@ onlyBuiltDependencies:
 
 overrides:
   '@types/estree': ^1.0.8
+  vite: 'catalog:'
+  vitest: 'catalog:'
 
 peerDependencyRules:
   ignoreMissing:
     # ignore react-server-dom-webpack -> webpack
     - webpack
+  allowAny:
+    - vite
+    - vitest
+  allowedVersions:
+    vite: '*'
+    vitest: '*'
+catalog:
+  vite: npm:@voidzero-dev/vite-plus-core@latest
+  vitest: npm:@voidzero-dev/vite-plus-test@latest
+  '@voidzero-dev/vite-plus': latest

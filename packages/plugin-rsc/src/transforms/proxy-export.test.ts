@@ -1,5 +1,5 @@
 import { parseAstAsync } from 'vite'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from '@voidzero-dev/vite-plus/test'
 import { transformProxyExport } from './proxy-export'
 import { debugSourceMap } from './test-utils'
 import { transformWrapExport } from './wrap-export'

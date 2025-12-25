@@ -1,6 +1,6 @@
 import { rmSync } from 'node:fs'
 import path from 'node:path'
-import { normalizePath, type Plugin } from 'vite'
+import { normalizePath, type Plugin } from '@voidzero-dev/vite-plus'
 import { createRPCServer } from 'vite-dev-rpc'
 
 export default function vitePluginRscBrowser(): Plugin[] {
