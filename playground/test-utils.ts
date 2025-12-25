@@ -4,7 +4,7 @@
 import fs from 'node:fs'
 import path from 'node:path'
 import type { ConsoleMessage, ElementHandle } from 'playwright-chromium'
-import { expect } from 'vitest'
+import { expect } from '@voidzero-dev/vite-plus/test'
 import { page, testDir } from './vitestSetup'
 
 export * from './vitestSetup'

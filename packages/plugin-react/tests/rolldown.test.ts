@@ -1,5 +1,5 @@
 import path from 'node:path'
-import { expect, test } from 'vitest'
+import { expect, test } from '@voidzero-dev/vite-plus/test'
 import { type Plugin, rolldown } from 'rolldown'
 import pluginReact, { type Options } from '../src/index.ts'
 

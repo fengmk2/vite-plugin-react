@@ -1,5 +1,5 @@
 import { parseAstAsync } from 'vite'
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it } from '@voidzero-dev/vite-plus/test'
 import { transformHoistInlineDirective } from './hoist'
 import { debugSourceMap } from './test-utils'
 

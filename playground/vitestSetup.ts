@@ -11,10 +11,10 @@ import type {
   Rollup,
   UserConfig,
   ViteDevServer,
-} from 'vite'
+} from '@voidzero-dev/vite-plus'
 import type { Browser, Page } from 'playwright-chromium'
-import type { RunnerTestFile } from 'vitest'
-import { beforeAll, inject } from 'vitest'
+import type { RunnerTestFile } from '@voidzero-dev/vite-plus/test'
+import { beforeAll, inject } from '@voidzero-dev/vite-plus/test'
 import {
   build,
   createBuilder,
@@ -22,7 +22,7 @@ import {
   loadConfigFromFile,
   mergeConfig,
   preview,
-} from 'vite'
+} from '@voidzero-dev/vite-plus'
 
 // #region env
 
@@ -356,7 +356,7 @@ function stripTrailingSlashIfNeeded(url: string, base: string): string {
   return url
 }
 
-declare module 'vite' {
+declare module '@voidzero-dev/vite-plus' {
   export interface UserConfig {
     /**
      * special test only hook
@@ -367,7 +367,7 @@ declare module 'vite' {
   }
 }
 
-declare module 'vitest' {
+declare module '@voidzero-dev/vite-plus/test' {
   export interface ProvidedContext {
     wsEndpoint: string
   }

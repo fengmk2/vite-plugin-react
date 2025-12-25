@@ -1,5 +1,5 @@
 import { resolve } from 'node:path'
-import { defineConfig } from 'vitest/config'
+import { defineConfig } from '@voidzero-dev/vite-plus'
 
 const timeout = process.env.PWDEBUG ? Infinity : process.env.CI ? 20_000 : 5_000
 

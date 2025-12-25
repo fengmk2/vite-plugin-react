@@ -1,6 +1,6 @@
 import path from 'node:path'
 import fs from 'fs-extra'
-import type { TestProject } from 'vitest/node'
+import type { TestProject } from '@voidzero-dev/vite-plus/test/node'
 import type { BrowserServer } from 'playwright-chromium'
 import { chromium } from 'playwright-chromium'
 
