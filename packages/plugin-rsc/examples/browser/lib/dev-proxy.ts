@@ -1,4 +1,7 @@
-import { ESModulesEvaluator, ModuleRunner } from 'vite/module-runner'
+import {
+  ESModulesEvaluator,
+  ModuleRunner,
+} from '@voidzero-dev/vite-plus/module-runner'
 import { createRPCClient } from 'vite-dev-rpc'
 
 const rpcClient = createRPCClient<{ invoke: Function }, {}>(

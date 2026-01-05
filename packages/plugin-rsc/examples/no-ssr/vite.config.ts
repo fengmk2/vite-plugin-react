@@ -1,6 +1,6 @@
 import rsc from '@vitejs/plugin-rsc'
 import react from '@vitejs/plugin-react'
-import { defineConfig, type Plugin } from 'vite'
+import { defineConfig, type Plugin } from '@voidzero-dev/vite-plus'
 import fsp from 'node:fs/promises'
 
 export default defineConfig({

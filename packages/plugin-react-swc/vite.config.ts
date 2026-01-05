@@ -1,7 +1,6 @@
 import { defineConfig } from '@voidzero-dev/vite-plus'
+import tsdownConfig from './tsdown.config.js'
 
 export default defineConfig({
-  test: {
-    dir: './src',
-  },
-}) as any
+  lib: tsdownConfig,
+})

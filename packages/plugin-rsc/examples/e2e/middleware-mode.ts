@@ -4,7 +4,7 @@ import { pathToFileURL } from 'node:url'
 import connect from 'connect'
 import { toNodeHandler } from 'srvx/node'
 import sirv from 'sirv'
-import type { Connect } from 'vite'
+import type { Connect } from '@voidzero-dev/vite-plus'
 
 async function main() {
   const app = connect() as Connect.Server

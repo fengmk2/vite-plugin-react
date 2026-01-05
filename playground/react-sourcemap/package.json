@@ -3,8 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "dev:classic": "USE_CLASSIC=1 vite",
+    "dev": "vite dev",
+    "dev:classic": "USE_CLASSIC=1 vite dev",
     "build": "vite build",
     "build:classic": "USE_CLASSIC=1 vite build",
     "debug": "node --inspect-brk vite",

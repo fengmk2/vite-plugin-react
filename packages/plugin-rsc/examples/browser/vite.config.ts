@@ -1,4 +1,4 @@
-import { defineConfig } from 'vite'
+import { defineConfig } from '@voidzero-dev/vite-plus'
 import react from '@vitejs/plugin-react'
 import rsc from '@vitejs/plugin-rsc'
 import rscBrowser from './lib/plugin'

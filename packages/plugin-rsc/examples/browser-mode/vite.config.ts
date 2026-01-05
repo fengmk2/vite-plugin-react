@@ -1,4 +1,8 @@
-import { defaultClientConditions, defineConfig, type Plugin } from 'vite'
+import {
+  defaultClientConditions,
+  defineConfig,
+  type Plugin,
+} from '@voidzero-dev/vite-plus'
 import {
   vitePluginRscMinimal,
   getPluginApi,

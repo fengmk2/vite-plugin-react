@@ -29,14 +29,14 @@
     "types"
   ],
   "scripts": {
-    "test": "vitest",
+    "test": "vite test",
     "test-e2e": "playwright test --project=chromium",
     "test-e2e-ci": "playwright test",
     "tsc": "tsc -b ./tsconfig.json ./e2e/tsconfig.json ./examples/*/tsconfig.json",
     "tsc-dev": "pnpm tsc --watch --preserveWatchOutput",
-    "dev": "tsdown --sourcemap --watch src",
-    "build": "tsdown",
-    "prepack": "tsdown"
+    "dev": "vite lib --sourcemap --watch src",
+    "build": "vite lib",
+    "prepack": "vite lib"
   },
   "dependencies": {
     "es-module-lexer": "^2.0.0",
@@ -63,7 +63,7 @@
     "react-dom": "^19.2.3",
     "react-server-dom-webpack": "^19.2.3",
     "tinyexec": "^1.0.2",
-    "tsdown": "^0.17.4"
+    "@voidzero-dev/vite-plus": "catalog:"
   },
   "peerDependencies": {
     "react": "*",

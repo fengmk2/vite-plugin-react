@@ -9,7 +9,7 @@ import {
   defineConfig,
   normalizePath,
   parseAstAsync,
-} from 'vite'
+} from '@voidzero-dev/vite-plus'
 import path from 'node:path'
 import fs from 'node:fs'
 import { fileURLToPath } from 'node:url'
